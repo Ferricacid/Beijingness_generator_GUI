@@ -20,10 +20,10 @@ while True:
     for i in text_processed:
         if i == "你":
             new += "您儿"
-        elif i >= 'a' and i <= 'Z':
-            new += i+'r'
         elif i in "~!@#$%^&*()_+=- `?><,./;':}{][""，。？！·、》《“”；‘：}{】【|——）（*&……%￥#@~":
             new += i
+        elif i >= 'A' and i <= 'z':
+            new += i+'r'
         else:
             new += i+"儿"
     sg.popup_scrolled(new)
